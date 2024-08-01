@@ -7,20 +7,16 @@ import 'package:sizer/sizer.dart';
 class NameForm extends StatelessWidget {
   final String? Function(String?)? validator;
   final String name;
-  // final IconData? icon;
-  // bool obscureText = false;
-  // final VoidCallback onPressed;
+
   final TextEditingController? controller;
   const NameForm({
-    // required this.obscureText,
-    // this.icon,
+  
     required this.name,
     super.key,
     required this.controller,
     this.validator,
     required Null Function(dynamic value) onSaved,
-    // required this.onPressed,
-    // required this.obscureText
+
   });
 
   @override
@@ -43,13 +39,7 @@ class NameForm extends StatelessWidget {
                 color: ColorData.blue),
           ),
         ),
-        // Container(
-        //     height: 6.h,
-        //     width: 86.w,
-        //     decoration: BoxDecoration(
-        //         color: Color.fromARGB(255, 238, 236, 236),
-        //         borderRadius: BorderRadius.circular(10)),
-        //     child:
+ 
 
         SizedBox(
           width: 30.w,
@@ -70,17 +60,7 @@ class NameForm extends StatelessWidget {
                   borderSide: BorderSide(color: ColorData.wgrey)),
               fillColor: ColorData.wgrey,
               filled: true,
-              // focusedBorder: OutlineInputBorder(
-              //     borderSide: BorderSide(color: ColorData.wgrey)),
-              // suffixIcon: IconButton(onPressed: onPressed, icon: Icon(icon)),
-              // Icon(
-              //   icon,
-              //   // color: Colors.black,
-              //   size: 22,
-              // ),
-              // border: OutlineInputBorder(
-              //     borderRadius: BorderRadius.circular(10),
-              //     borderSide: BorderSide(color: ColorData.wgrey))),)
+   
             ),
           ),
         ),

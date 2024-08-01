@@ -26,8 +26,8 @@ class SignInPage extends StatelessWidget {
           child: Stack(children: [
             Container(
               margin: EdgeInsets.only(left: 24.w, top: 25.h),
-              height: 50.h,
-              width: 26.w,
+              height: 49.h,
+              width: 25.w,
               decoration: BoxDecoration(
                 // color: Colors.red,
                 image: DecorationImage(

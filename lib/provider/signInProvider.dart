@@ -11,16 +11,16 @@ import 'package:shared_preferences/shared_preferences.dart';
 class SignInProvider extends ChangeNotifier {
   bool isLoading = false;
 
-  // Method to toggle isLoading
+
   void setLoading(bool value) {
     isLoading = value;
-    notifyListeners(); // Notify listeners when isLoading changes
+    notifyListeners(); 
   }
 
   Future<void> signIn(
       String username, String password, BuildContext context) async {
     try {
-      setLoading(true); // Set loading to true when signIn process starts
+      setLoading(true);
 
       log("Sending login request...");
 
@@ -32,7 +32,7 @@ class SignInProvider extends ChangeNotifier {
       log('Response status code: ${response.statusCode}');
       log('Response body: ${response.body}');
 
-      setLoading(false); // Set loading to false after receiving response
+      setLoading(false); 
 
       if (response.statusCode == 200) {
         // showDialog(...);
@@ -76,7 +76,7 @@ class SignInProvider extends ChangeNotifier {
       }
     } catch (e) {
       log('Error during sign-in: $e');
-      setLoading(false); // Set loading to false if an error occurs
+      setLoading(false);
     }
   }
 }

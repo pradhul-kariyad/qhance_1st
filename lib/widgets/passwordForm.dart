@@ -43,13 +43,7 @@ class PasswordForm extends StatelessWidget {
                 color: ColorData.blue),
           ),
         ),
-        // Container(
-        //     height: 6.h,
-        //     width: 86.w,
-        //     decoration: BoxDecoration(
-        //         color: Color.fromARGB(255, 238, 236, 236),
-        //         borderRadius: BorderRadius.circular(10)),
-        //     child:
+     
 
         SizedBox(
           width: 30.w,
